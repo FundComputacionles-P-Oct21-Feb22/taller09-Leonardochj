@@ -1,0 +1,38 @@
+
+1. Inicio
+2. (nombreVendedores(2), x(50)[{a-z, {A-Z}, BS}])
+3. (apellidosVendedores(2), x(50)[{a-z, {A-Z}, BS}])
+3. (ventas(2)(5), i[1-n])
+4. nombresVendedores <-- {Jesica, Robert}
+                             0       1        
+5. apellidosVendedores <-- {Cole, Wallace}
+                               0      1    
+6. fila, i[0-n]
+7. columna, i[0-n]
+
+8. ventas, i[0-n] <-- 0
+9. TotalVentas, i[0-n]
+10.ventasVendedores[0][0] <-- 0
+11.ventasVendedores[0][1] <-- 0
+12.ventasVendedores[0][2] <-- 0
+13.ventasVendedores[0][3] <-- 0
+15.ventasVendedores[0][4] <-- 0
+16.ventasVendedores[1][0] <-- 0
+17.ventasVendedores[1][1] <-- 0
+18.ventasVendedores[1][2] <-- 0
+19.ventasVendedores[1][3] <-- 0
+20.ventasVendedores[1][4] <-- 0
+
+21.Para(fila <-- 0, fila<2, 1) haga // 0<2 v // 1<2 v // 2<2 f 
+22.  suma <-- 0
+23.       Para (columna <-- 0, columna<4, 1) haga // 0<5 v // 1<5 v // 2<5 v // 3<5 v // 4<5 v // 5<5 f
+                                                  // 0<5 v // 1<5 v // 2<5 v // 3<5 v // 4<5 v // 5<5 f
+                                                  // 0<5 v // 1<5 v // 2<5 v // 3<5 v // 4<5 v // 5<5 f
+24.       suma <-- suma + notasEstudiantes[fila][columna] // 0 + 0 = 0
+25.       Fin_Para
+26.       TotalVentas <-- ventas + suma
+27.Fin_Para
+28.Escribir {"Vendedor(a) " + nombreVendedores[0] + apellidoVendedores[0]}
+29.Escribir {"Vendedor(a) " + nombreVendedores[1] + apellidoVendedores[1]}
+30.Escribir "Ha realizado un total en " + TotalVentas + " en ventas." 
+31.Fin
